@@ -46,4 +46,14 @@ Public Class Form1
         Next
         Me.lblMaxMin.Text = "Max Number = " & max
     End Sub
+
+    Private Sub btnMin_Click(sender As Object, e As EventArgs) Handles btnMin.Click
+        Dim min As Integer = 99
+        For index As Integer = 0 To numbers.Length - 1
+            If lstNums.Items(index) < min Then
+                min = lstNums.Items(index)
+            End If
+        Next
+        Me.lblMaxMin.Text = "Min Number = " & min
+    End Sub
 End Class

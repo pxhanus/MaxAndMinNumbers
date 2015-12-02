@@ -67,7 +67,7 @@ Partial Class Form1
         'lblMaxMin
         '
         Me.lblMaxMin.AutoSize = True
-        Me.lblMaxMin.Location = New System.Drawing.Point(145, 127)
+        Me.lblMaxMin.Location = New System.Drawing.Point(106, 125)
         Me.lblMaxMin.Name = "lblMaxMin"
         Me.lblMaxMin.Size = New System.Drawing.Size(0, 13)
         Me.lblMaxMin.TabIndex = 4
