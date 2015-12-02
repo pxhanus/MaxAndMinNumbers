@@ -36,4 +36,14 @@ Public Class Form1
             lstbox.Items.Add(array(index))
         Next
     End Sub
+
+    Private Sub btnMax_Click(sender As Object, e As EventArgs) Handles btnMax.Click
+        Dim max As Integer = 0
+        For index As Integer = 0 To numbers.Length - 1
+            If lstNums.Items(index) > max Then
+                max = lstNums.Items(index)
+            End If
+        Next
+        Me.lblMaxMin.Text = "Max Number = " & max
+    End Sub
 End Class
